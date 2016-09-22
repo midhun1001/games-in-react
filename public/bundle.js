@@ -29732,7 +29732,7 @@
 
 	var _multi2 = _interopRequireDefault(_multi);
 
-	var _home = __webpack_require__(363);
+	var _home = __webpack_require__(364);
 
 	var _home2 = _interopRequireDefault(_home);
 
@@ -31349,7 +31349,7 @@
 
 	var _multi2 = _interopRequireDefault(_multi);
 
-	var _winner = __webpack_require__(365);
+	var _winner = __webpack_require__(363);
 
 	var _winner2 = _interopRequireDefault(_winner);
 
@@ -33385,85 +33385,6 @@
 /* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _getPrototypeOf = __webpack_require__(304);
-
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-	var _classCallCheck2 = __webpack_require__(309);
-
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-	var _createClass2 = __webpack_require__(310);
-
-	var _createClass3 = _interopRequireDefault(_createClass2);
-
-	var _possibleConstructorReturn2 = __webpack_require__(314);
-
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-	var _inherits2 = __webpack_require__(349);
-
-	var _inherits3 = _interopRequireDefault(_inherits2);
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(195);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Home = function (_Component) {
-	  (0, _inherits3.default)(Home, _Component);
-
-	  function Home() {
-	    (0, _classCallCheck3.default)(this, Home);
-	    return (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || (0, _getPrototypeOf2.default)(Home)).apply(this, arguments));
-	  }
-
-	  (0, _createClass3.default)(Home, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'nav',
-	        { className: 'navbar navbar2' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container-fluid' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'navbar-header' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/single' },
-	              'Single Player'
-	            ),
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/multi' },
-	              'Multiplayer Player'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	  return Home;
-	}(_react.Component);
-
-	exports.default = Home;
-
-/***/ },
-/* 364 */,
-/* 365 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
@@ -33628,6 +33549,84 @@
 	}(_react.Component);
 
 	exports.default = Results;
+
+/***/ },
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(304);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(309);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(310);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(314);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(349);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(195);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Home = function (_Component) {
+	  (0, _inherits3.default)(Home, _Component);
+
+	  function Home() {
+	    (0, _classCallCheck3.default)(this, Home);
+	    return (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || (0, _getPrototypeOf2.default)(Home)).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(Home, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'nav',
+	        { className: 'navbar navbar2' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container-fluid' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'navbar-header' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/single' },
+	              'Single Player'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/multi' },
+	              'Multiplayer Player'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return Home;
+	}(_react.Component);
+
+	exports.default = Home;
 
 /***/ }
 /******/ ]);
