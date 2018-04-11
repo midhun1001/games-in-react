@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+header {
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $header-bg;
+  z-index: 101;
+  div {
+    height: 100%;
+    padding: 5px 0;
+  }
+  .col {
+    height: 100%;
+  }
+  img {
+    height: 100%;
+  }
+}

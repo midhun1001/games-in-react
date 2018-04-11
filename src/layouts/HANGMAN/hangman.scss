@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.hng {
+  &__image {
+    text-align: center;
+  }
+  &__user {
+    text-align: center;
+    margin-top: 50px;
+    &__entered {
+      padding: 0;
+      height: 50px;
+      li {
+        display: inline-block;
+        padding: 5px;
+        margin: 0;
+        font-size: ceil($font-15 + 3);
+      }
+      &__placeholder {
+        color: $grey;
+      }
+    }
+  }
+  &__que {
+    text-align: center;
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        padding: 0 10px;
+      }
+    }
+  }
+  &__error {
+    color: $red;
+    font-size: $font-20;
+  }
+}
+.body {
+  display: none;
+}
+.line {
+  &__1 {
+    stroke:rgb(0,0,0);
+    stroke-width:2
+  }
+}

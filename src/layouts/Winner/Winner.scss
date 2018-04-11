@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.winner {
+  position: fixed;
+  z-index: 200;
+  top: 30%;
+  left: 40%;
+  text-align: center;
+  span {
+    display: block;
+    font-size: $font-30;
+    color: $white;
+  }
+}

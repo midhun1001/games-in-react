@@ -2,9 +2,11 @@
 
 exports.__esModule = true;
 
-var _react = require('react');
+var _createReactClass = require('create-react-class');
 
-var _react2 = _interopRequireDefault(_react);
+var _createReactClass2 = _interopRequireDefault(_createReactClass);
+
+var _propTypes = require('prop-types');
 
 var _invariant = require('invariant');
 
@@ -18,10 +20,6 @@ var _InternalPropTypes = require('./InternalPropTypes');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _React$PropTypes = _react2.default.PropTypes;
-var string = _React$PropTypes.string;
-var object = _React$PropTypes.object;
-
 /**
  * A <Redirect> is used to declare another URL path a client should
  * be sent to when they request a given URL.
@@ -29,10 +27,9 @@ var object = _React$PropTypes.object;
  * Redirects are placed alongside routes in the route configuration
  * and are traversed in the same manner.
  */
-
-var Redirect = _react2.default.createClass({
+/* eslint-disable react/require-render-return */
+var Redirect = (0, _createReactClass2.default)({
   displayName: 'Redirect',
-
 
   statics: {
     createRouteFromReactElement: function createRouteFromReactElement(element) {
@@ -41,8 +38,8 @@ var Redirect = _react2.default.createClass({
       if (route.from) route.path = route.from;
 
       route.onEnter = function (nextState, replace) {
-        var location = nextState.location;
-        var params = nextState.params;
+        var location = nextState.location,
+            params = nextState.params;
 
 
         var pathname = void 0;
@@ -83,11 +80,11 @@ var Redirect = _react2.default.createClass({
   },
 
   propTypes: {
-    path: string,
-    from: string, // Alias for path
-    to: string.isRequired,
-    query: object,
-    state: object,
+    path: _propTypes.string,
+    from: _propTypes.string, // Alias for path
+    to: _propTypes.string.isRequired,
+    query: _propTypes.object,
+    state: _propTypes.object,
     onEnter: _InternalPropTypes.falsy,
     children: _InternalPropTypes.falsy
   },

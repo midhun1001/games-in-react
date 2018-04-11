@@ -1,0 +1,152 @@
+@import '../../styles/variables.scss';
+.active__plyr {
+  color: $green;
+}
+.multi1 {
+  top: 10px;
+}
+.multi2 {
+  bottom: 10px;
+}
+.single {
+  top: 45px;
+}
+.snake1 {
+  position: absolute;
+  left: 250px;
+  top: 300px;
+  z-index: 100;
+}
+.snake2 {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  z-index: 100;
+}
+.snake3 {
+  position: absolute;
+  height: 500px;
+  left: 51%;
+  bottom: 35px;
+  z-index: 100;
+}
+.snake4 {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  z-index: 100;
+}
+.ladder1 {
+  position: absolute;
+  left: 630px;
+  top: 300px;
+  z-index: 101;
+}
+.ladder2 {
+  height: 350px;
+  position: absolute;
+  bottom: 23px;
+  left: 125px;
+  z-index: 101;
+}
+.ladder3 {
+  position: absolute;
+  height: 750px;
+  top: 33px;
+  left: 550px;
+  transform: rotate(15deg);
+  z-index: 101;
+}
+.sal {
+  &__ball {
+    width: 25px;
+    height: 25px;
+    background: white;
+    position: absolute;
+    border-radius: 50px;
+    left: 35px;
+    text-align: center;
+    z-index: 150;
+  }
+  &__board {
+    width: 1022.5px;
+    height: 1000px;
+    position: relative;
+    &__area {
+      position: relative;
+    }
+    &__score {
+      margin-bottom: 25px;
+      padding: 15px !important;
+    }
+    &__user {
+      margin-bottom: 25px;
+      padding: 0 !important;
+      font-size: $font-20;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__dice {
+      margin: 25px 0;
+      text-align: center;
+      h5 {
+        margin: 0;
+      }
+      &__val {
+        display: block;
+        height: 50px;
+        font-size: 30px;
+        color: $red;
+      }
+    }
+  }
+  &__boardCol {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+  }
+  &__settings {
+    &__heading {
+      text-align: center;
+      font-size: ceil($font-20 + 5);
+    }
+    &__col {
+      margin-top: 25px;
+    }
+    &__start {
+      margin-top: 25px;
+      text-align: center;
+    }
+    &__plyr1 {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      background: transparent;
+      border: 0;
+      span {
+        float: left;
+        font-size: 18px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      i {
+        float: left;
+      }
+      &:focus {
+        background: transparent;
+      }
+    }
+  }
+  &__error {
+    text-align: center;
+    margin-top: 25px;
+    color: $red-hover;
+  }
+  &__fire {
+    position: absolute;
+    top: 45%;
+    z-index: 201;
+    opacity: .7;
+  }
+}

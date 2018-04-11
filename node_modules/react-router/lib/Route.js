@@ -2,9 +2,11 @@
 
 exports.__esModule = true;
 
-var _react = require('react');
+var _createReactClass = require('create-react-class');
 
-var _react2 = _interopRequireDefault(_react);
+var _createReactClass2 = _interopRequireDefault(_createReactClass);
+
+var _propTypes = require('prop-types');
 
 var _invariant = require('invariant');
 
@@ -16,10 +18,6 @@ var _InternalPropTypes = require('./InternalPropTypes');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _React$PropTypes = _react2.default.PropTypes;
-var string = _React$PropTypes.string;
-var func = _React$PropTypes.func;
-
 /**
  * A <Route> is used to declare which components are rendered to the
  * page when the URL matches a given pattern.
@@ -30,21 +28,20 @@ var func = _React$PropTypes.func;
  * that lead to it are considered "active" and their components are
  * rendered into the DOM, nested in the same order as in the tree.
  */
-
-var Route = _react2.default.createClass({
+/* eslint-disable react/require-render-return */
+var Route = (0, _createReactClass2.default)({
   displayName: 'Route',
-
 
   statics: {
     createRouteFromReactElement: _RouteUtils.createRouteFromReactElement
   },
 
   propTypes: {
-    path: string,
+    path: _propTypes.string,
     component: _InternalPropTypes.component,
     components: _InternalPropTypes.components,
-    getComponent: func,
-    getComponents: func
+    getComponent: _propTypes.func,
+    getComponents: _propTypes.func
   },
 
   /* istanbul ignore next: sanity check */

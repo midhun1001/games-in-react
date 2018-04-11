@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.home {
+  &__col {
+    display: block;
+    float: left;
+    padding: 15px;
+    height: 250px;
+    text-align: center;
+    transition: transform .2s;
+    h4 {
+      height: 50px;
+      margin: 0;
+      color: $body-color;
+    }
+    img {
+      height: 150px;
+    }
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+}
